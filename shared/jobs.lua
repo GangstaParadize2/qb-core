@@ -2,7 +2,7 @@ QBShared = QBShared or {}
 QBShared.ForceJobDefaultDutyAtLogin = true -- true: Force duty state to jobdefaultDuty | false: set duty state from database last saved
 QBShared.Jobs = {
 	['unemployed'] = {
-		label = 'Civilian',
+		label = 'Civil',
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
@@ -18,23 +18,23 @@ QBShared.Jobs = {
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
+                name = 'Cadete',
                 payment = 50
             },
 			['1'] = {
-                name = 'Officer',
+                name = 'Agente',
                 payment = 75
             },
 			['2'] = {
-                name = 'Sergeant',
+                name = 'Sergento',
                 payment = 100
             },
 			['3'] = {
-                name = 'Lieutenant',
+                name = 'Coronel',
                 payment = 125
             },
 			['4'] = {
-                name = 'Chief',
+                name = 'Teniente',
 				isboss = true,
                 payment = 150
             },
@@ -46,23 +46,23 @@ QBShared.Jobs = {
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
+                name = 'Recruta',
                 payment = 50
             },
 			['1'] = {
-                name = 'Paramedic',
+                name = 'Paramedico',
                 payment = 75
             },
 			['2'] = {
-                name = 'Doctor',
+                name = 'Enfermero',
                 payment = 100
             },
 			['3'] = {
-                name = 'Surgeon',
+                name = 'Doctor',
                 payment = 125
             },
 			['4'] = {
-                name = 'Chief',
+                name = 'Sirujano',
 				isboss = true,
                 payment = 150
             },
@@ -191,6 +191,33 @@ QBShared.Jobs = {
             },
         },
 	},
+    ['hayes'] = {
+		label = 'Hayes Autos',
+		defaultDuty = true,
+		grades = {
+            ['0'] = {
+                name = 'Recruit',
+                payment = 50
+            },
+			['1'] = {
+                name = 'Novice',
+                payment = 75
+            },
+			['2'] = {
+                name = 'Experienced',
+                payment = 100
+            },
+			['3'] = {
+                name = 'Advanced',
+                payment = 125
+            },
+			['4'] = {
+                name = 'Manager',
+				isboss = true,
+                payment = 150
+            },
+        },
+	},
 	['judge'] = {
 		label = 'Honorary',
 		defaultDuty = true,
@@ -279,4 +306,15 @@ QBShared.Jobs = {
             },
         },
 	},
+    ['gruppesechs'] = {
+        label = 'Gruppe 6',
+        defaultDuty = true,
+        offDutyPay = false,
+        grades = {
+            ['0'] = {
+                name = 'Collector',
+                payment = 50
+            },
+        },
+    },
 }
